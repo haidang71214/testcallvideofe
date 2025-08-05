@@ -5,8 +5,8 @@ import { useDoctors } from "../../hooks/useDoctors";
 import DoctorsHero from "../../components/Doctors/DoctorsHero";
 import SpecialtySidebar from "../../components/Doctors/SpecialtySidebar";
 import DoctorsHeader from "../../components/Doctors/DoctorsHeader";
-import DoctorsGrid from "../../components/doctors/DoctorsGrid";
 
+import DoctorsGrid from "../../components/Doctors/DoctorsGrid.jsx"
 const Doctors = () => {
   const { user } = useAuth();
   const navigate = useNavigate();
