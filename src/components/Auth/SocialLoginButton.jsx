@@ -1,9 +1,10 @@
+import { SOCKET_URL } from "../../utils/axiosInstance";
 import { GoogleIcon } from "../google-icon";
 
 export default function SocialLoginButton({ text = "Đăng nhập với Google" }) {
   const handleGoogleLogin = () => {
     // nhớ sửa cái này trước khi deploy
-    window.location.href = "http://localhost:8080/api/v1/auth/auth/google";
+    window.location.href = `${SOCKET_URL}/api/v1/auth/auth/google`;
   };
 
   return (
